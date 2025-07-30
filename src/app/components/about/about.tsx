@@ -15,11 +15,11 @@ const About = () => {
           <p className="about-description">{t("description")}</p>
 
           <div className="about-icons">
-            <FaReact className="about-icon" title="React" />
-            <SiNextdotjs className="about-icon" title="Next.js" />
-            <SiTailwindcss className="about-icon" title="Tailwind CSS" />
-            <FaPython className="about-icon" title="Python" />
-            <SiDjango className="about-icon" title="Django" />
+            <FaReact className="about-icon react" title="React" />
+            <SiNextdotjs className="about-icon nextjs" title="Next.js" />
+            <SiTailwindcss className="about-icon tailwind" title="Tailwind CSS" />
+            <FaPython className="about-icon python" title="Python" />
+            <SiDjango className="about-icon django" title="Django" />
           </div>
         </div>
       </div>
