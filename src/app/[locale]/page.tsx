@@ -1,11 +1,15 @@
 import Navbar from "@/app/components/navbar/navbar";
 import Home from "@/app/components/home/home";
+import About from "@/app/components/about/about";
 
 const HomePage = () => {
   return (
     <>
       <Navbar />
-      <Home title="Hey, I'm Kousha" subtitle="Full-stack developer & security enthusiast" />
+      <main className="space-y-1"> 
+        <Home />
+        <About />
+      </main>
     </>
   );
 };

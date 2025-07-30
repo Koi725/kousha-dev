@@ -1,0 +1,76 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section {
+  @apply py-28 px-6 sm:px-16 md:px-24 bg-gradient-to-b from-gray-950 via-black to-gray-900 relative overflow-hidden text-center lg:text-left;
+}
+
+.about-container {
+  @apply flex flex-col lg:flex-row items-center justify-between gap-20;
+}
+
+.about-content {
+  @apply max-w-2xl text-center lg:text-left space-y-8;
+  animation: fadeInUp 1.2s ease-out forwards;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.about-title {
+  @apply text-white text-4xl md:text-5xl font-bold;
+  letter-spacing: -0.5px;
+}
+
+.about-subtitle {
+  @apply text-blue-400 text-xl font-semibold;
+  text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+.about-description {
+  @apply text-gray-300 text-base leading-relaxed;
+  line-height: 1.8;
+}
+
+.about-icons {
+  @apply flex flex-wrap justify-center lg:justify-start gap-6 mt-8;
+}
+
+.about-icon {
+  width: 52px;
+  height: 52px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  opacity: 0.9;
+}
+
+.about-icon.react {
+  color: #61dafb;
+}
+
+.about-icon.next {
+  color: #fff;
+}
+
+.about-icon.tailwind {
+  color: #38bdf8;
+}
+
+.about-icon.python {
+  color: #3776ab;
+}
+
+.about-icon.django {
+  color: #092e20;
+}
+
+.about-icon:hover {
+  transform: scale(1.2) rotate(4deg);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
