@@ -1,13 +1,17 @@
+'use client';
+
 import React from "react";
-import { HomeSectionProps } from "./home-types";
+import { useTranslations } from 'next-intl';
 import "../../../tailwind/components/home/home.css";
 import { FaChevronDown } from "react-icons/fa";
 
-const Home: React.FC<HomeSectionProps> = ({ title, subtitle }) => {
+const Home: React.FC = () => {
+  const t = useTranslations();
+
   return (
     <section className="home-section">
-      <h1 className="home-title">{title}</h1>
-      {subtitle && <p className="home-subtitle">{subtitle}</p>}
+      <h1 className="home-title">{t('home.title')}</h1>
+      <p className="home-subtitle">{t('home.subtitle')}</p>
       <FaChevronDown className="scroll-down-icon" />
     </section>
   );

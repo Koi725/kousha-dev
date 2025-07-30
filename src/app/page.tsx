@@ -1,13 +1,6 @@
-import Navbar from "@/app/components/navbar/navbar";
-import Home from "@/app/components/home/home";
+// src/app/page.tsx
+import { redirect } from 'next/navigation';
 
-const HomePage = () => {
-  return (
-    <>
-      <Navbar />
-      <Home title="Hey, I'm Kousha" subtitle="Full-stack developer & security enthusiast" />
-    </>
-  );
-};
-
-export default HomePage;
+export default function Home() {
+  redirect('/en'); 
+}
