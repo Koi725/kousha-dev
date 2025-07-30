@@ -1,25 +1,31 @@
-/* src/tailwind/components/navbar/navbar.css */
-
 .navbar {
-  @apply w-full bg-gray-900 text-white shadow-md;
+  @apply w-full bg-gray-900 text-white shadow-sm;
 }
 
 .navbar__container {
   @apply max-w-7xl mx-auto px-6 py-4 flex items-center justify-between;
 }
 
-.navbar__logo {
-  @apply text-xl font-bold;
-}
-
 .navbar__menu {
-  @apply flex gap-6;
+  @apply flex gap-6 text-sm sm:text-base;
 }
 
-.navbar__item {
-  @apply list-none;
+.navbar__item a {
+  @apply hover:text-yellow-400 transition-colors duration-300;
 }
 
-.navbar__link {
-  @apply text-white hover:text-yellow-400 transition-colors duration-300;
+.navbar__lang-wrapper {
+  @apply relative cursor-pointer;
+}
+
+.lang-toggle {
+  @apply bg-transparent border border-gray-600 px-3 py-1 rounded text-sm hover:bg-gray-800 transition;
+}
+
+.lang-dropdown {
+  @apply absolute right-0 mt-2 flex flex-col bg-gray-800 border border-gray-700 rounded shadow-lg z-50;
+}
+
+.lang-option {
+  @apply px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors;
 }
