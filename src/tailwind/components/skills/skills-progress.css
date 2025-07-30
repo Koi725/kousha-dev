@@ -1,6 +1,5 @@
-
 .skills-progress-section {
-  @apply py-20 px-6 sm:px-16 md:px-24 bg-black;
+  @apply py-24 px-6 sm:px-16 md:px-24 bg-gradient-to-b from-gray-950 via-black to-gray-900;
 }
 
 .skills-progress-container {
@@ -8,8 +7,18 @@
 }
 
 .skills-progress-title {
-  @apply text-white text-3xl font-bold tracking-tight mb-6;
-  text-align: center;
+  @apply text-white text-4xl font-bold tracking-tight mb-10 text-center;
+  position: relative;
+}
+
+.skills-progress-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  margin: 12px auto 0;
+  background: linear-gradient(to right, #0ea5e9, #9333ea);
+  border-radius: 9999px;
 }
 
 .skills-progress-grid {
@@ -17,17 +26,60 @@
 }
 
 .skill-bar-item {
-  @apply flex flex-col gap-1;
+  @apply flex flex-col gap-2;
+  transform-style: preserve-3d;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.2s;
 }
 
 .skill-bar-header {
-  @apply flex justify-between items-center text-white text-sm font-semibold;
+  @apply flex justify-between items-center text-white text-sm font-semibold px-1;
 }
 
 .skill-bar-track {
-  @apply w-full h-3 bg-gray-700 rounded-full overflow-hidden;
+  @apply w-full h-4 bg-gray-800 rounded-full overflow-hidden relative;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
 }
 
 .skill-bar-fill {
-  @apply h-full rounded-full transition-all duration-700 ease-out;
+  @apply h-full rounded-full;
+  animation: fillGrow 1.6s ease forwards;
+  background: linear-gradient(135deg, #0ea5e9, #9333ea);
+  background-size: 400% 400%;
+  animation: fillGrow 1.6s ease forwards, moveGradient 5s infinite ease-in-out;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+/* === Keyframes === */
+
+@keyframes fillGrow {
+  from {
+    width: 0%;
+  }
+  to {
+    /* width will be set inline dynamically */
+  }
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
