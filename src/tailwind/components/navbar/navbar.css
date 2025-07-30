@@ -1,0 +1,25 @@
+/* src/tailwind/components/navbar/navbar.css */
+
+.navbar {
+  @apply w-full bg-gray-900 text-white shadow-md;
+}
+
+.navbar__container {
+  @apply max-w-7xl mx-auto px-6 py-4 flex items-center justify-between;
+}
+
+.navbar__logo {
+  @apply text-xl font-bold;
+}
+
+.navbar__menu {
+  @apply flex gap-6;
+}
+
+.navbar__item {
+  @apply list-none;
+}
+
+.navbar__link {
+  @apply text-white hover:text-yellow-400 transition-colors duration-300;
+}
