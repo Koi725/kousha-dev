@@ -123,3 +123,21 @@
 .linux {
   color: #fcc624;
 }
+.cpp {
+  color: #00599c;
+}
+.csharp {
+  color: #68217a;
+}
+.bash {
+  color: #89e051;
+}
+.sql {
+  color: #336791;
+}
+.ts {
+  color: #3178C6;
+}
+.node {
+  color: #3C873A;
+}
