@@ -19,5 +19,8 @@
     "title": "About Me",
     "subtitle": "Full-stack Developer & Cybersecurity Expert",
     "description": "With years of experience in building secure, scalable, and beautiful web applications, I specialize in full-stack development and cybersecurity. Whether it's crafting elegant UIs with React and Tailwind or securing applications against OWASP Top 10 threats, I bring a deep passion for clean code and secure architecture. Currently based in Portugal, I help businesses launch fast, reliable, and safe platforms — from frontend interfaces to backend logic and automated security tools."
+  },
+    "skills": {
+    "title": "My Skills"
   }
 }

@@ -1,0 +1,125 @@
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8) rotateX(-20deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05) rotateX(5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotateX(0);
+  }
+}
+
+.skills-section {
+  @apply py-24 px-6 sm:px-16 md:px-24 bg-gradient-to-b from-gray-950 via-black to-gray-900;
+  overflow: hidden;
+}
+
+.skills-container {
+  @apply max-w-6xl mx-auto flex flex-col items-center justify-center gap-12;
+}
+
+.skills-title {
+  @apply text-white text-4xl font-bold tracking-tight mb-10;
+  position: relative;
+}
+.skills-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 12px auto 0;
+  background: linear-gradient(to right, #0ea5e9, #9333ea);
+  border-radius: 9999px;
+}
+
+.skills-grid {
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8;
+  animation: bounceIn 1s ease-out;
+}
+
+.skill-item {
+  @apply flex flex-col items-center text-center p-4 rounded-xl transition-transform duration-500;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(600px);
+}
+
+.skill-item:hover {
+  transform: perspective(600px) rotateY(6deg) scale(1.07);
+  box-shadow: 0 0 24px rgba(14, 165, 233, 0.4);
+}
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  opacity: 0.9;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.2) rotate(6deg);
+  filter: drop-shadow(0 0 10px currentColor);
+  opacity: 1;
+}
+
+.skill-name {
+  @apply text-sm text-white font-semibold tracking-wide;
+}
+
+
+/* === Official Brand Colors for Icons === */
+
+.react {
+  color: #61dafb;
+}
+.next {
+  color: #ffffff;
+}
+.tailwind {
+  color: #38bdf8;
+}
+.python {
+  color: #3776ab;
+}
+.django {
+  color: #092e20;
+}
+.javascript {
+  color: #f7df1e;
+}
+.mysql {
+  color: #00758f;
+}
+.cyber {
+  color: #8b5cf6;
+}
+.shield {
+  color: #f43f5e;
+}
+.sql {
+  color: #e38c00;
+}
+.java {
+  color: #ea2d2e;
+}
+.html {
+  color: #e34f26;
+}
+.css {
+  color: #1572b6;
+}
+.git {
+  color: #f05032;
+}
+.linux {
+  color: #fcc624;
+}

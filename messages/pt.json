@@ -19,5 +19,8 @@
   "title": "Sobre mim",
     "subtitle": "Desenvolvedor Full-stack e Especialista em Cibersegurança",
     "description": "Com anos de experiência na criação de aplicações web seguras, escaláveis e modernas, sou especializado em desenvolvimento full-stack e segurança cibernética. Desde interfaces elegantes com React e Tailwind até proteção contra vulnerabilidades OWASP, sou apaixonado por código limpo e arquitetura segura. Atualmente baseado em Portugal, ajudo empresas a lançar plataformas rápidas, confiáveis e protegidas — tanto no frontend quanto no backend e automações de segurança."
+  },
+    "skills": {
+    "title": "Minhas Habilidades"
   }
 }

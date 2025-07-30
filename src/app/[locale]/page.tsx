@@ -1,6 +1,7 @@
 import Navbar from "@/app/components/navbar/navbar";
 import Home from "@/app/components/home/home";
 import About from "@/app/components/about/about";
+import Skills from "@/app/components/skills/skills";
 
 const HomePage = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage = () => {
       <main className="space-y-1"> 
         <Home />
         <About />
+        <Skills />
       </main>
     </>
   );
