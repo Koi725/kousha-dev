@@ -53,7 +53,7 @@ const ContactPage = () => {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="contact-container">
         <h2 className="contact-title">{t("title")}</h2>
 

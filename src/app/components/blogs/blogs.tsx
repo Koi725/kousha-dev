@@ -9,7 +9,7 @@ const Blogs = () => {
   const t = useTranslations("blogs");
 
   return (
-    <section className="blogs-section">
+    <section className="blogs-section" id="blogs">
       <div className="blogs-container">
         <h2 className="blogs-title">{t("title")}</h2>
         <div className="blogs-grid">

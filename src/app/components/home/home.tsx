@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   const t = useTranslations();
 
   return (
-    <section className="home-section">
+    <section className="home-section" id="home">
       <div className="home-container">
         <div className="home-left">
           <h1 className="home-title">{t('home.title')}</h1>

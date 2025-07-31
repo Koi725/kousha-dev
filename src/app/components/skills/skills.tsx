@@ -7,7 +7,7 @@ const Skills = () => {
   const t = useTranslations("skills");
 
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="skills">
       <div className="skills-container">
         <h2 className="skills-title">{t("title")}</h2>
 
