@@ -76,5 +76,20 @@
   },
   "blogs": {
     "title": "Meus Blogs"
+  },
+    "contact": {
+    "title": "Fale Comigo",
+    "fields": {
+      "name": "Seu Nome",
+      "email": "Seu Email",
+      "message": "Sua Mensagem"
+    },
+    "button": "Enviar Mensagem",
+    "success": "Obrigado! Sua mensagem foi enviada.",
+    "errors": {
+      "required": "Por favor, preencha todos os campos.",
+      "email": "Por favor, insira um email válido.",
+      "messageTooLong": "Sua mensagem é muito longa. (Máx 1000 caracteres)"
+    }
   }
 }
