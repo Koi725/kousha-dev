@@ -1,49 +1,24 @@
-.footer-section {
-  @apply bg-[#0b0c10] pt-12 pb-6 px-6 sm:px-12 md:px-24;
+.footer {
+  @apply bg-[#0b0c10] py-10 mt-24 text-white;
 }
 
 .footer-container {
-  @apply max-w-5xl mx-auto flex flex-col items-center gap-6;
-}
-
-.footer-icons {
-  @apply flex gap-6 justify-center items-center;
-}
-
-.footer-icon {
-  @apply text-2xl sm:text-3xl transition-transform duration-300;
-  color: white;
-  opacity: 0.8;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer-icon:hover {
-  transform: scale(1.25) rotate(4deg);
-  opacity: 1;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
-}
-
-/* Specific icon colors */
-.footer-icon.github:hover {
-  color: #6e5494;
-}
-
-.footer-icon.linkedin:hover {
-  color: #0077b5;
-}
-
-.footer-icon.email:hover {
-  color: #ea4335;
-}
-
-.footer-icon.whatsapp:hover {
-  color: #25D366;
-}
-
-.footer-icon.telegram:hover {
-  color: #229ED9;
+  @apply max-w-5xl mx-auto px-6 flex flex-col items-center gap-6;
 }
 
 .footer-text {
-  @apply text-gray-500 text-sm text-center mt-4;
+  @apply text-sm text-gray-400 text-center tracking-wide;
+}
+
+.footer-icons {
+  @apply flex gap-6 items-center justify-center;
+}
+
+.footer-icon-wrapper {
+  @apply text-2xl sm:text-3xl transition-transform duration-300 ease-in-out cursor-pointer;
+}
+
+.footer-icon-wrapper:hover {
+  transform: scale(1.25) translateY(-4px);
+  @apply drop-shadow-md;
 }

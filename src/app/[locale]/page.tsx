@@ -23,7 +23,7 @@ const HomePage = () => {
         <Blog/>
         <Contact />
       </main>
-      <Footer />
+       <Footer />
     </>
   );
 };
