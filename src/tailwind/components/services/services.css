@@ -1,0 +1,53 @@
+.services-section {
+  @apply py-20 px-4 sm:px-12 md:px-24 bg-[#09090b];
+}
+
+.services-container {
+  @apply max-w-6xl mx-auto flex flex-col items-center gap-16;
+}
+
+.services-title {
+  @apply text-white text-3xl font-bold tracking-tight relative mb-8 text-center;
+}
+
+.services-title::after {
+  content: "";
+  @apply absolute left-1/2 -translate-x-1/2 mt-2 w-16 h-1 bg-yellow-400 rounded-full;
+  bottom: -10px;
+}
+
+.services-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full;
+}
+
+.service-card {
+  @apply bg-[#1e1e20] rounded-2xl shadow-xl p-6 flex flex-col items-center text-center transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl border border-gray-700;
+}
+
+.service-icon {
+  @apply text-yellow-400 text-5xl mb-4 animate-service-pop;
+}
+
+.service-title {
+  @apply text-white text-lg font-semibold mb-2;
+}
+
+.service-description {
+  @apply text-gray-300 text-sm leading-relaxed;
+}
+
+/* Animation for icon */
+@keyframes service-pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-service-pop {
+  animation: service-pop 0.6s ease-out;
+}
