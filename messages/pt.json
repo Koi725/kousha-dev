@@ -73,5 +73,8 @@
         "desc": "Mais de 7 sites e apps desenvolvidos com design profissional e funcionalidades reais."
       }
     ]
+  },
+  "blogs": {
+    "title": "Meus Blogs"
   }
 }

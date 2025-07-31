@@ -1,0 +1,45 @@
+.blogs-section {
+  @apply py-20 px-6 sm:px-12 md:px-24 bg-[#09090b];
+}
+
+.blogs-container {
+  @apply max-w-6xl mx-auto flex flex-col items-center gap-16;
+}
+
+.blogs-title {
+  @apply text-white text-3xl font-bold tracking-tight relative mb-8 text-center;
+}
+
+.blogs-title::after {
+  content: "";
+  @apply absolute left-1/2 -translate-x-1/2 mt-2 w-16 h-1 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full;
+  bottom: -10px;
+}
+
+.blogs-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full;
+}
+
+.blog-card {
+  @apply bg-[#1c1c1f] rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition-all duration-300 cursor-pointer;
+}
+
+.blog-image {
+  @apply w-full h-44 object-cover;
+}
+
+.blog-content {
+  @apply p-4 flex flex-col gap-2;
+}
+
+.blog-title {
+  @apply text-white text-lg font-semibold;
+}
+
+.blog-desc {
+  @apply text-gray-300 text-sm;
+}
+
+.blog-date {
+  @apply text-xs text-gray-500 mt-1;
+}
