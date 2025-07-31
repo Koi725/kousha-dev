@@ -1,0 +1,59 @@
+.experience-section {
+  @apply py-20 px-4 sm:px-12 md:px-24 bg-[#0c0c0f];
+}
+
+.experience-container {
+  @apply max-w-5xl mx-auto flex flex-col gap-16;
+}
+
+.experience-title {
+  @apply text-white text-3xl font-bold text-center relative;
+}
+
+.experience-title::after {
+  content: "";
+  @apply absolute left-1/2 -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full mt-2;
+  bottom: -10px;
+}
+
+.experience-list {
+  @apply flex flex-col gap-10;
+}
+
+.experience-item {
+  @apply flex items-start gap-4 border-b border-gray-800 pb-6;
+  animation: fadeInUp 0.6s ease-in-out both;
+}
+
+.experience-icon {
+  @apply text-2xl sm:text-3xl text-white opacity-80 transition-transform duration-300;
+}
+
+.experience-item:hover .experience-icon {
+  transform: scale(1.2) rotate(4deg);
+  @apply opacity-100;
+}
+
+.experience-texts {
+  @apply flex flex-col gap-2;
+}
+
+.experience-item-title {
+  @apply text-white text-lg font-semibold;
+}
+
+.experience-item-desc {
+  @apply text-gray-300 text-sm sm:text-base leading-relaxed;
+}
+
+/* Entrance animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
