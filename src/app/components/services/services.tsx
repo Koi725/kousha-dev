@@ -1,4 +1,5 @@
 "use client";
+
 import { servicesData } from "./services-data";
 import { useTranslations } from "next-intl";
 import "@/tailwind/components/services/services.css";
@@ -13,10 +14,10 @@ const Services = () => {
 
         <div className="services-grid">
           {servicesData.map((service) => (
-            <div key={service.id} className="service-box">
-              {service.icon}
+            <div key={service.id} className="service-card">
+              <div className="service-icon">{service.icon}</div>
               <h3 className="service-title">{t(`${service.id}.title`)}</h3>
-              <p className="service-desc">{t(`${service.id}.desc`)}</p>
+              <p className="service-description">{t(`${service.id}.desc`)}</p>
             </div>
           ))}
         </div>
