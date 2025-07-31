@@ -25,5 +25,34 @@
   },
     "skillsProgress": {
     "title": "Meu Gráfico de Proficiência"
+  },
+  "services": {
+    "title": "Meus Serviços",
+    "items": [
+      {
+        "title": "Desenvolvimento Web",
+        "desc": "Criação de sites modernos e aplicações web full-stack."
+      },
+      {
+        "title": "Consultoria",
+        "desc": "Oferecendo conselhos estratégicos em tecnologia e otimização."
+      },
+      {
+        "title": "Automação",
+        "desc": "Desenvolvendo scripts e ferramentas para automatizar tarefas."
+      },
+      {
+        "title": "Segurança Cibernética",
+        "desc": "Fortalecimento de sistemas e auditorias de segurança."
+      },
+      {
+        "title": "Apps Móveis",
+        "desc": "Desenvolvimento de apps Android e iOS de alta performance."
+      },
+      {
+        "title": "Integração de IA",
+        "desc": "Adicionando inteligência artificial a processos digitais."
+      }
+    ]
   }
 }
