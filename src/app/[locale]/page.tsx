@@ -7,6 +7,7 @@ import Services from "@/app/components/services/services";
 import Experience from "@/app/components/experince/experience";
 import Blog from "@/app/components/blogs/blogs"
 import Contact from "@/app/components/contact/contact"
+import Footer from "@/app/components/foooter/footer";
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
         <Blog/>
         <Contact />
       </main>
+      <Footer />
     </>
   );
 };
