@@ -4,6 +4,7 @@ import About from "@/app/components/about/about";
 import Skills from "@/app/components/skills/skills";
 import SkillsProgress from "@/app/components/skills/skills-progress/skills-progress";
 import Services from "@/app/components/services/services";
+import Experience from "../components/experince/experience";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <Skills />
         <SkillsProgress />
         <Services/>
+        <Experience />
       </main>
     </>
   );
