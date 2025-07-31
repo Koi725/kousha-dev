@@ -1,5 +1,5 @@
 .footer {
-  @apply bg-[#0b0c10] py-10 mt-24 text-white;
+  @apply bg-[#0b0c10] py-10 mt-1 text-white;
 }
 
 .footer-container {
@@ -15,10 +15,27 @@
 }
 
 .footer-icon-wrapper {
-  @apply text-2xl sm:text-3xl transition-transform duration-300 ease-in-out cursor-pointer;
+  @apply text-3xl sm:text-4xl cursor-pointer transition-transform duration-300 ease-in-out drop-shadow-md;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  will-change: transform;
 }
 
 .footer-icon-wrapper:hover {
-  transform: scale(1.25) translateY(-4px);
-  @apply drop-shadow-md;
+  animation: wiggle3D 0.6s ease-in-out forwards;
+}
+
+@keyframes wiggle3D {
+  0% {
+    transform: scale(1) rotateX(0deg) rotateY(0deg);
+  }
+  30% {
+    transform: scale(1.2) rotateX(15deg) rotateY(-10deg);
+  }
+  60% {
+    transform: scale(1.25) rotateX(-10deg) rotateY(12deg);
+  }
+  100% {
+    transform: scale(1.2) rotateX(0deg) rotateY(0deg);
+  }
 }

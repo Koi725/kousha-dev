@@ -1,6 +1,11 @@
-.contact-section {
+/* .contact-section {
   @apply py-24 px-6 sm:px-12 md:px-24 bg-[#0b0c10];
+} */
+
+.contact-section {
+  @apply pt-24 pb-12 px-6 sm:px-12 md:px-24 bg-[#0b0c10];
 }
+
 
 .contact-container {
   @apply max-w-4xl mx-auto flex flex-col items-center gap-12;
