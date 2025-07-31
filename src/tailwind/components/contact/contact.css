@@ -1,0 +1,69 @@
+.contact-section {
+  @apply py-24 px-6 sm:px-12 md:px-24 bg-[#0b0c10];
+}
+
+.contact-container {
+  @apply max-w-4xl mx-auto flex flex-col items-center gap-12;
+}
+
+.contact-title {
+  @apply text-white text-3xl font-bold text-center relative;
+}
+
+.contact-title::after {
+  content: "";
+  @apply absolute left-1/2 -translate-x-1/2 w-16 h-1 mt-3 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full;
+  bottom: -10px;
+}
+
+.contact-form {
+  @apply w-full bg-[#1a1b1f] p-8 rounded-xl shadow-2xl border border-gray-800 backdrop-blur-md;
+  animation: fadeInUp 0.7s ease-out both;
+}
+
+.contact-form-group {
+  @apply flex flex-col gap-2 mb-6;
+}
+
+.contact-label {
+  @apply text-sm text-gray-400 font-medium tracking-wide;
+}
+
+.contact-input,
+.contact-textarea {
+  @apply bg-[#111214] text-white text-sm p-3 rounded-md border border-gray-700 outline-none transition-all duration-300;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  @apply border-cyan-500 ring-1 ring-cyan-500;
+}
+
+.contact-textarea {
+  @apply min-h-[120px] resize-none;
+}
+
+.contact-button {
+  @apply w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.03] transition-all duration-300;
+}
+
+/* Success message */
+.contact-success {
+  @apply text-green-400 text-sm mt-4 text-center;
+}
+
+/* Error message */
+.contact-error {
+  @apply text-red-500 text-sm mt-2;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

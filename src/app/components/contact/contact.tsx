@@ -1,4 +1,3 @@
-// src/app/contact/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -7,11 +6,13 @@ import "@/tailwind/components/contact/contact.css";
 
 const ContactPage = () => {
   const t = useTranslations("contact");
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
@@ -45,7 +46,6 @@ const ContactPage = () => {
       return setError(t("errors.messageTooLong"));
     }
 
-    // Simulate sending for now
     setTimeout(() => {
       setSuccess(true);
       setFormData({ name: "", email: "", message: "" });
@@ -58,33 +58,49 @@ const ContactPage = () => {
         <h2 className="contact-title">{t("title")}</h2>
 
         <form className="contact-form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder={t("fields.name")}
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder={t("fields.email")}
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <textarea
-            name="message"
-            placeholder={t("fields.message")}
-            rows={6}
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
+          <div className="contact-form-group">
+            <label className="contact-label" htmlFor="name">{t("fields.name")}</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              className="contact-input"
+              placeholder={t("fields.name")}
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-          {error && <p className="form-error">{error}</p>}
-          {success && <p className="form-success">{t("success")}</p>}
+          <div className="contact-form-group">
+            <label className="contact-label" htmlFor="email">{t("fields.email")}</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className="contact-input"
+              placeholder={t("fields.email")}
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className="contact-form-group">
+            <label className="contact-label" htmlFor="message">{t("fields.message")}</label>
+            <textarea
+              name="message"
+              id="message"
+              className="contact-textarea"
+              placeholder={t("fields.message")}
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          {error && <p className="contact-error">{error}</p>}
+          {success && <p className="contact-success">{t("success")}</p>}
 
           <button type="submit" className="contact-button">
             {t("button")}

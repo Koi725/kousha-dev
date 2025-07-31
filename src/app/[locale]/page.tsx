@@ -4,8 +4,9 @@ import About from "@/app/components/about/about";
 import Skills from "@/app/components/skills/skills";
 import SkillsProgress from "@/app/components/skills/skills-progress/skills-progress";
 import Services from "@/app/components/services/services";
-import Experience from "../components/experince/experience";
-import Blog from "../components/blogs/blogs"
+import Experience from "@/app/components/experince/experience";
+import Blog from "@/app/components/blogs/blogs"
+import Contact from "@/app/components/contact/contact"
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
         <Services/>
         <Experience />
         <Blog/>
+        <Contact />
       </main>
     </>
   );
