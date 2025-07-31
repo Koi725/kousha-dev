@@ -52,5 +52,30 @@
       "title": "AI Integration",
       "desc": "Embedding smart AI tools into digital workflows for better UX and automation."
     }
+  },
+    "experience": {
+    "title": "My Experiences",
+    "items": [
+      {
+        "title": "Professional Background",
+        "desc": "Over 4 years of professional experience in backend and full-stack development, delivering scalable, secure, and high-performance web solutions."
+      },
+      {
+        "title": "Certifications",
+        "desc": "Holder of multiple certifications in Cybersecurity, Full-Stack Development, and Network Fundamentals from credible platforms."
+      },
+      {
+        "title": "Competitions & Research",
+        "desc": "Top ranks in national algorithmic challenges, AI/ML projects, and contributor to several academic research papers."
+      },
+      {
+        "title": "Skills",
+        "desc": "Proficient in PHP, Python, JavaScript, TypeScript, SQL, Linux, Bash, and ethical hacking techniques."
+      },
+      {
+        "title": "Project Portfolio",
+        "desc": "Built and deployed over 15 high-impact websites and applications with real-world functionality and clean design."
+      }
+    ]
   }
 }

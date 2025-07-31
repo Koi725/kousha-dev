@@ -52,5 +52,30 @@
       "title": "Integração com IA",
       "desc": "Integrando ferramentas de IA para melhorar a UX e automação."
     }
+  },
+    "experience": {
+    "title": "Minhas Experiências",
+    "items": [
+      {
+        "title": "Experiência Profissional",
+        "desc": "Mais de 4 anos de experiência profissional em desenvolvimento backend e full-stack, entregando soluções escaláveis e seguras."
+      },
+      {
+        "title": "Certificados",
+        "desc": "Certificados em Cibersegurança, Desenvolvimento Full-Stack e Fundamentos de Redes."
+      },
+      {
+        "title": "Competições e Pesquisa",
+        "desc": "Classificações em desafios nacionais, projetos de IA/ML e participação em artigos acadêmicos."
+      },
+      {
+        "title": "Competências",
+        "desc": "Conhecimentos sólidos em PHP, Python, JavaScript, TypeScript, SQL, Linux, Bash e hacking ético."
+      },
+      {
+        "title": "Portfólio",
+        "desc": "Mais de 15 sites e apps desenvolvidos com design profissional e funcionalidades reais."
+      }
+    ]
   }
 }
