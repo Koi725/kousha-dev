@@ -26,12 +26,18 @@
 }
 
 .experience-icon {
-  @apply text-2xl sm:text-3xl text-white opacity-80 transition-transform duration-300;
+  @apply text-2xl sm:text-3xl transition-transform duration-500;
+  transform-style: preserve-3d;
 }
 
+.icon-background { @apply text-blue-400; }         /* Professional Background */
+.icon-cert { @apply text-yellow-300; }             /* Certifications */
+.icon-skills { @apply text-green-400; }            /* Skills */
+.icon-portfolio { @apply text-pink-400; }          /* Portfolio */
+
 .experience-item:hover .experience-icon {
-  transform: scale(1.2) rotate(4deg);
-  @apply opacity-100;
+  transform: scale(1.2) rotateY(12deg) rotateX(6deg);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .experience-texts {
@@ -46,7 +52,6 @@
   @apply text-gray-300 text-sm sm:text-base leading-relaxed;
 }
 
-/* Entrance animation */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
