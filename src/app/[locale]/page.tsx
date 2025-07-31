@@ -3,6 +3,7 @@ import Home from "@/app/components/home/home";
 import About from "@/app/components/about/about";
 import Skills from "@/app/components/skills/skills";
 import SkillsProgress from "@/app/components/skills/skills-progress/skills-progress";
+import Services from "@/app/components/services/services";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
         <About />
         <Skills />
         <SkillsProgress />
+        <Services/>
       </main>
     </>
   );

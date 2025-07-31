@@ -28,31 +28,29 @@
   },
   "services": {
     "title": "Meus Serviços",
-    "items": [
-      {
-        "title": "Desenvolvimento Web",
-        "desc": "Criação de sites modernos e aplicações web full-stack."
-      },
-      {
-        "title": "Consultoria",
-        "desc": "Oferecendo conselhos estratégicos em tecnologia e otimização."
-      },
-      {
-        "title": "Automação",
-        "desc": "Desenvolvendo scripts e ferramentas para automatizar tarefas."
-      },
-      {
-        "title": "Segurança Cibernética",
-        "desc": "Fortalecimento de sistemas e auditorias de segurança."
-      },
-      {
-        "title": "Apps Móveis",
-        "desc": "Desenvolvimento de apps Android e iOS de alta performance."
-      },
-      {
-        "title": "Integração de IA",
-        "desc": "Adicionando inteligência artificial a processos digitais."
-      }
-    ]
+    "web": {
+      "title": "Desenvolvimento Web",
+      "desc": "Criação de sites modernos, responsivos e aplicações full-stack."
+    },
+    "consulting": {
+      "title": "Consultoria",
+      "desc": "Oferecendo conselhos estratégicos sobre tecnologia, crescimento e otimização."
+    },
+    "automation": {
+      "title": "Ferramentas de Automação",
+      "desc": "Desenvolvendo scripts e ferramentas para automatizar tarefas."
+    },
+    "penetration": {
+      "title": "Cibersegurança",
+      "desc": "Refinando sistemas, fazendo auditorias e protegendo aplicações web."
+    },
+    "problem-solving": {
+      "title": "Resolução de Problemas",
+      "desc": "Analisando questões complexas e criando soluções inovadoras com eficiência."
+    },
+    "ai": {
+      "title": "Integração com IA",
+      "desc": "Integrando ferramentas de IA para melhorar a UX e automação."
+    }
   }
 }

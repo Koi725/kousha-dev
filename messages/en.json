@@ -28,31 +28,29 @@
   },
   "services": {
     "title": "My Services",
-    "items": [
-      {
-        "title": "Web Development",
-        "desc": "Building modern, responsive websites and full-stack web apps."
-      },
-      {
-        "title": "Consulting",
-        "desc": "Providing strategic advice on tech, growth, and optimization."
-      },
-      {
-        "title": "Automation Tools",
-        "desc": "Creating custom scripts and tools to automate tasks and boost productivity."
-      },
-      {
-        "title": "Cybersecurity Solutions",
-        "desc": "Hardening systems, performing audits, and securing web applications."
-      },
-      {
-        "title": "Mobile App Development",
-        "desc": "Designing and developing high-performance Android & iOS apps."
-      },
-      {
-        "title": "AI Integration",
-        "desc": "Embedding smart AI tools into digital workflows for better UX and automation."
-      }
-    ]
+    "web": {
+      "title": "Web Development",
+      "desc": "Building modern, responsive websites and full-stack web apps."
+    },
+    "consulting": {
+      "title": "Consulting",
+      "desc": "Providing strategic advice on tech, growth, and optimization."
+    },
+    "automation": {
+      "title": "Automation Tools",
+      "desc": "Creating custom scripts and tools to automate tasks and boost productivity."
+    },
+    "penetration": {
+      "title": "Cybersecurity Solutions",
+      "desc": "Hardening systems, performing audits, and securing web applications."
+    },
+    "problem-solving": {
+      "title": "Problem Solving",
+      "desc": "Analyzing complex issues and crafting innovative solutions efficiently."
+    },
+    "ai": {
+      "title": "AI Integration",
+      "desc": "Embedding smart AI tools into digital workflows for better UX and automation."
+    }
   }
 }
