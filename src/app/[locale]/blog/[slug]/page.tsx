@@ -67,7 +67,7 @@ export default function BlogDetailPage() {
         {blog.image && (
           <div className="w-full max-w-4xl mx-auto mb-12 overflow-hidden rounded-xl border border-[#2c2c45] shadow-[0_0_40px_#2c2c45] transform transition duration-500 hover:scale-[1.01] hover:rotate-[0.3deg]">
             <Image
-              src={blog.image.startsWith('http') ? blog.image : `${API_BASE}${blog.image}`}
+              src={blog.image}
               alt={blog.title}
               width={1200}
               height={600}

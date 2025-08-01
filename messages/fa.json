@@ -77,10 +77,10 @@
     ]
   },
   "BlogPage": {
-    "my_blogs": "My Blogs",
+    "my_blogs": "وبلاگ‌های من",
     "blogs": {
-      "loading": "Loading...",
-      "no_blogs": "No blog posts found."
+      "loading": "در حال بارگذاری",
+      "no_blogs": "هیچ پست وبلاگی یافت نشد"
     }
   },
     "contact": {
