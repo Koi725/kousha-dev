@@ -27,7 +27,7 @@ export default function BlogPage() {
 
   return (
     <section className="min-h-screen flex flex-col items-center px-6 py-20 bg-gradient-to-b from-black via-[#0e0e26] to-black text-white">
-      <h1 className="text-5xl font-extrabold mb-12 animate-fade-in bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-xl">
+      <h1 className="text-6xl font-extrabold mb-12 mt-8 py-4 leading-tight animate-fade-in bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-xl">
         {t('my_blogs')}
       </h1>
 
@@ -36,7 +36,7 @@ export default function BlogPage() {
       ) : blogs.length === 0 ? (
         <p className="text-gray-400 text-lg animate-fade-in">{t('blogs.no_blogs')}</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl animate-fade-in-up">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl animate-fade-in-up" dir="ltr">
           {blogs.map((blog) => (
             <Link
               href={`/blog/${blog.slug}`}

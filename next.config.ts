@@ -1,13 +1,39 @@
-// next.config.ts
-import type { NextConfig } from "next";
-import withNextIntl from "next-intl/plugin";
+// // next.config.ts
+// import type { NextConfig } from "next";
+// import withNextIntl from "next-intl/plugin";
 
-const nextIntlConfig = withNextIntl("./i18n.ts");
+// const nextIntlConfig = withNextIntl("./i18n.ts");
+
+// const nextConfig: NextConfig = {
+//    experimental: {
+//      serverActions: {}
+//    }
+// };
+
+// export default nextIntlConfig(nextConfig);
+
+
+
+// next.config.ts
+import type { NextConfig } from 'next';
+import withNextIntl from 'next-intl/plugin';
+
+const nextIntlConfig = withNextIntl('./i18n.ts');
 
 const nextConfig: NextConfig = {
-   experimental: {
-     serverActions: {}
-   }
+  experimental: {
+    serverActions: {},
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '8000',
+        pathname: '/media/**',
+      },
+    ],
+  },
 };
 
 export default nextIntlConfig(nextConfig);

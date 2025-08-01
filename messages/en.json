@@ -97,5 +97,10 @@
       "email": "Please enter a valid email address.",
       "messageTooLong": "Your message is too long. (Max 1000 characters)"
     }
+  },
+    "BlogDetail": {
+    "loading": "Loading...",
+    "not_found": "Blog not found.",
+    "back": "← Back to blogs"
   }
 }
