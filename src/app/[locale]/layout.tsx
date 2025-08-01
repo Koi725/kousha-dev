@@ -3,6 +3,8 @@ import { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import '@/app/globals.css';
+// import Navbar from "@/app/components/navbar/navbar";
+// import Footer from "@/app/components/foooter/footer";
 
 export default async function LocaleLayout({
   children,

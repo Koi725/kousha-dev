@@ -26,24 +26,31 @@ export default function BlogPage() {
   }, []);
 
   return (
-    <section className="min-h-screen px-6 py-16 text-white bg-gradient-to-b from-black via-[#0e0e26] to-black">
-      <h1 className="text-4xl font-bold mb-10 animate-fade-in">{t('my_blogs')}</h1>
+    <section className="min-h-screen flex flex-col items-center px-6 py-20 bg-gradient-to-b from-black via-[#0e0e26] to-black text-white">
+      <h1 className="text-5xl font-extrabold mb-12 animate-fade-in bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-xl">
+        {t('my_blogs')}
+      </h1>
 
       {loading ? (
-        <p className="text-gray-400 animate-pulse">{t('blogs.loading') || 'Loading...'}</p>
+        <p className="text-gray-400 text-lg animate-pulse">{t('blogs.loading') || 'Loading...'}</p>
       ) : blogs.length === 0 ? (
-        <p className="text-gray-400 animate-fade-in">{t('blogs.no_blogs')}</p>
+        <p className="text-gray-400 text-lg animate-fade-in">{t('blogs.no_blogs')}</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl animate-fade-in-up">
           {blogs.map((blog) => (
             <Link
               href={`/blog/${blog.slug}`}
               key={blog.id}
-              className="bg-[#1f1f3a] hover:bg-[#2e2e52] transition-all duration-300 p-6 rounded-2xl shadow-xl border border-[#333348]"
+              className="group bg-[#13131f] rounded-3xl border border-[#2c2c45] p-6 shadow-2xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-purple-900/40 relative overflow-hidden"
             >
-              <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
-              <p className="text-sm text-gray-400 mb-4">{blog.summary}</p>
-              <span className="text-xs text-gray-500">{new Date(blog.published_at).toLocaleDateString()}</span>
+              <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-purple-500 via-indigo-400 to-pink-500 blur-xl z-0"></div>
+              <div className="relative z-10">
+                <h2 className="text-2xl font-bold mb-3 text-white group-hover:text-purple-400 transition-all duration-300">
+                  {blog.title}
+                </h2>
+                <p className="text-sm text-gray-400 mb-4 leading-relaxed">{blog.slug}</p>
+                <span className="text-xs text-gray-500">{new Date(blog.published_at).toLocaleDateString()}</span>
+              </div>
             </Link>
           ))}
         </div>
@@ -55,7 +62,7 @@ export default function BlogPage() {
         }
 
         .animate-fade-in-up {
-          animation: fadeInUp 0.8s ease-in-out forwards;
+          animation: fadeInUp 1s ease-in-out forwards;
         }
 
         @keyframes fadeIn {
