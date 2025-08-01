@@ -6,12 +6,12 @@ import "@/tailwind/components/blogs/blogs.css";
 import Link from "next/link";
 
 const Blogs = () => {
-  const t = useTranslations("blogs");
+  const t = useTranslations("BlogPage");
 
   return (
     <section className="blogs-section" id="blogs">
       <div className="blogs-container">
-        <h2 className="blogs-title">{t("title")}</h2>
+        <h2 className="blogs-title">{t("my_blogs")}</h2>
         <div className="blogs-grid">
           {blogPosts.map((post: BlogItemType) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card">

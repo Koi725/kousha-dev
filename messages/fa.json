@@ -76,8 +76,12 @@
       }
     ]
   },
-  "blogs": {
-    "title": "بلاگ‌های من"
+  "BlogPage": {
+    "my_blogs": "My Blogs",
+    "blogs": {
+      "loading": "Loading...",
+      "no_blogs": "No blog posts found."
+    }
   },
     "contact": {
     "title": "تماس با من",
